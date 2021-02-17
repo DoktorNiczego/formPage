@@ -1,21 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap");
-@import url(reset.css);
 body {
-  background: #3ab454;
-  background: linear-gradient(90deg, #3ab454 0%, #e41dfd 50%, #e6fc45 100%);
-  font-size: 15px;
-  font-family: 'Roboto', sans-serif;
-  display: flex;
-  justify-content: center; }
-
-.nav {
-  position: fixed;
-  display: inline-block; }
-  .nav .other_nav_but {
-    list-style: none; }
-
-section.form_section {
-  line-height: 1.5;
-  margin-top: 50px; }
+  background-color: grey; }
 
 /*# sourceMappingURL=style.css.map */
