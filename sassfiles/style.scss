@@ -4,4 +4,11 @@
 body{
     background: rgb(58,180,84);
     background: linear-gradient(90deg, rgba(58,180,84,1) 0%, rgba(228,29,253,1) 50%, rgba(230,252,69,1) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}
+
+nav{
+    display: flex;
 }

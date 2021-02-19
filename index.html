@@ -13,77 +13,93 @@
     </head>
 <body>
     <nav>
-        <button><i class="fas fa-bars"></i></button>
-        <ul>
-            <li><button><i class="far fa-heart"></i></button></li>
-            <li><button>Sing up</button></li>
-            <li><button>Log in</button></li>
-        </ul>
+        <div class="nav_buttons"><button><i class="fas fa-bars"></i></button></div>
+        <div class="nav_buttons_list">
+            <ul>
+                <div class="nav_buttons"><li><button><i class="far fa-heart"></i></button></li></div>
+                <div class="nav_buttons"><li><button>Sing up</button></li></div>
+                <div class="nav_buttons"><li><button>Log in</button></li></div>
+            </ul>
+        </div>
     </nav>
-    <header>
-        <b>Just some music survey</b>
-    </header>
+    <div class="survey_title">
+        <p>Just some music survey</p>
+    </div>
     <section>
-        <form action="" method="GET" class="survey">
-            <p>Tell us someting about your music taste. </p>
-            <label for="name">
-                Name:
-                <input type="text" name="name" id="name" placeholder="Enter your name" required> 
-            </label>
-            <label for="email">
-                Email:
-                <input type="text" name="email" id="email" placeholder="Enter email" required></input>
-            </label>
-            <label for="dropdown">
-                Where is your favourite place to listen to music?
-                <select name="Select location" id="dropdown" class="dropdown">
-                    <option value="home">My home</option>
-                    <option value="outside">Outside</option>
-                    <option value="car">In my car</option>
-                    <option value="other">Other</option>
-                </select>
-            </label>
-            <label for="time">
-                <p>How long do you listen to musisc?</p>
-                <ul>
-                    <li>
-                        <input type="radio" name="time" id="to_2hr">To 2 hours a day</input>
-                    </li>
-                    <li>
-                        <input type="radio" name="time" id="to_4hr">Between 2 and 4 hours a day</input>
-                    </li>
-                    <li>
-                        <input type="radio" name="time" id="to_6hr">Between 4 and 6 hours a day</input>
-                    </li>
-                    <li>
-                        <input type="radio" name="time" id="more_6hr">More than 6 hours a day</input>
-                    </li>  
-                </ul>  
-            </label>
-            <label for="feelings_check">
-                   <ul>
-                       <li>
-                           <input type="checkbox" name="feelings_check" id="good">Good</input>
-                        </li>
-                       <li>
-                           <input type="checkbox" name="feelings_check" id="excited">Excited</input>
-                        </li>
-                       <li>
-                           <input type="checkbox" name="feelings_check" id="loved">Loved</input>
-                        </li>
-                       <li>
-                           <input type="checkbox" name="feelings_check" id="enthusiastic">Enthusiastic</input>
-                        </li>
-                   </ul>
-            </label>
-            <label for="thoughts">
-                <legend>What gives you listening to music?</legend>
-                <textarea id="thoughts" name="thoughts" placeholder="Type you thoughts..." style="resize: vertical;"></textarea>   
-            </label>
-        </form>
+        <div class="form_container">
+            <form action="" method="GET" class="survey">
+               <div class="form_title"><p>Tell us someting about your music taste. </p></div>
+                <div class="form_row">    
+                    <label for="name">
+                        Name:
+                        <input type="text" name="name" id="name" placeholder="Enter your name" required> 
+                    </label>
+                </div>
+                <div class="form_row">    
+                    <label for="email">
+                        Email:
+                        <input type="text" name="email" id="email" placeholder="Enter email" required></input>
+                    </label>
+                </div>
+                <div class="form_row">    
+                    <label for="dropdown">
+                        Where is your favourite place to listen to music?
+                        <select name="Select location" id="dropdown" class="dropdown">
+                            <option value="home">My home</option>
+                            <option value="outside">Outside</option>
+                            <option value="car">In my car</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </label>
+                </div>
+                <div class="form_row">    
+                    <label for="time">
+                        <p>How long do you listen to musisc?</p>
+                        <ul>
+                            <li>
+                                <input type="radio" name="time" id="to_2hr">To 2 hours a day</input>
+                            </li>
+                            <li>
+                                <input type="radio" name="time" id="to_4hr">Between 2 and 4 hours a day</input>
+                            </li>
+                            <li>
+                                <input type="radio" name="time" id="to_6hr">Between 4 and 6 hours a day</input>
+                            </li>
+                            <li>
+                                <input type="radio" name="time" id="more_6hr">More than 6 hours a day</input>
+                            </li>  
+                        </ul>  
+                    </label>
+                </div>
+                <div class="form_row">    
+                    <label for="feelings_check">
+                        <ul>
+                            <li>
+                                <input type="checkbox" name="feelings_check" id="good">Good</input>
+                                </li>
+                            <li>
+                                <input type="checkbox" name="feelings_check" id="excited">Excited</input>
+                                </li>
+                            <li>
+                                <input type="checkbox" name="feelings_check" id="loved">Loved</input>
+                                </li>
+                            <li>
+                                <input type="checkbox" name="feelings_check" id="enthusiastic">Enthusiastic</input>
+                                </li>
+                        </ul>
+                    </label>
+                </div>
+                <div class="form_row">
+                    <label for="thoughts">
+                        <legend>What gives you listening to music?</legend>
+                        <textarea id="thoughts" name="thoughts" placeholder="Type you thoughts..." style="resize: vertical;"></textarea>   
+                    </label>
+                </div>
+            </form>
+        </div>
     </section>
     <footer>
-        <p>Copyrights Jakub &copy;</p>
+        <div><p>Copyrights Jakub &copy;</p></div>
     </footer>
 </body>
 </html>

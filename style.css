@@ -4,4 +4,11 @@ body {
   background: #3ab454;
   background: linear-gradient(90deg, #3ab454 0%, #e41dfd 50%, #e6fc45 100%); }
 
+nav {
+  display: flex;
+  flex-direction: row; }
+  nav div ul {
+    display: flex;
+    flex-direction: row; }
+
 /*# sourceMappingURL=style.css.map */
