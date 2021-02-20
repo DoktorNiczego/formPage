@@ -16,13 +16,21 @@ nav{
     height: 50px;
     justify-content: space-between;
     align-items: center;
-    & ul {
+    background-color: rgba(83, 83, 83, 0.568);
+        ul {
         display: flex;
     }
 }
 .survey_title{
     display: flex;
     justify-content: center;
+}
+form{
+    display: inline-block;
+    .form_rows{
+        position: static;
+        display: block;
+    }
 }
 section{
     display: flex;
@@ -31,7 +39,7 @@ section{
     .form_container{
         display: flex;
         justify-content: center;
-        width: 80%;
+        width: 60%;
         background-color: rgba(202, 204, 209, 0.596);
     }
 }
