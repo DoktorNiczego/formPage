@@ -1,7 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url(reset.css);
 
-$widthHalf: 50%;
+$widthHalf: 48%;
+%buttonStyle {
+    background: rgb(113, 121, 233);
+    font-size: 1.3rem;
+    border-radius: 5px;
+    border: none;
+    margin: 5px;
+}
 
 
 body{
@@ -9,6 +16,7 @@ body{
     background: linear-gradient(90deg, rgba(58,180,84,1) 0%, rgba(228,29,253,1) 50%, rgba(230,252,69,1) 100%);
     display: flex;
     flex-direction: column;
+    font-family: 'Roboto' , sans-serif;
 }
 
 nav{
@@ -19,19 +27,48 @@ nav{
     background-color: rgba(83, 83, 83, 0.568);
         ul {
         display: flex;
+        
+    }
+}
+.nav_buttons button{
+    @extend %buttonStyle;
+    & :hover{
+        cursor:  pointer;
+        background: transparent;
     }
 }
 .survey_title{
     display: flex;
     justify-content: center;
+    margin: 10px;
 }
 form{
-    display: inline-block;
-    .form_rows{
-        position: static;
-        display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    .form_title{
+        margin: 5px;
     }
 }
+.form_row{
+    display: block;
+    margin: 10px;
+}
+.form_labels{
+    display: inline-block;
+    width: $widthHalf;
+    text-align: right;
+    vertical-align: top;
+}
+.form_fields{
+    display: inline-block;
+    width: $widthHalf;
+    text-align: left;
+    vertical-align: middle;
+}
+
 section{
     display: flex;
     justify-content: center;
