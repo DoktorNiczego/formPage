@@ -3,11 +3,15 @@
 
 $widthHalf: 48%;
 %buttonStyle {
-    background: rgb(113, 121, 233);
+    background: rgb(206, 208, 235);
     font-size: 1.3rem;
     border-radius: 5px;
     border: none;
     margin: 5px;
+        &:hover{
+            cursor: pointer;
+            background: greenyellow;
+        }
 }
 
 
@@ -32,11 +36,8 @@ nav{
 }
 .nav_buttons button{
     @extend %buttonStyle;
-    & :hover{
-        cursor:  pointer;
-        background: transparent;
     }
-}
+
 .survey_title{
     display: flex;
     justify-content: center;
@@ -68,7 +69,9 @@ form{
     text-align: left;
     vertical-align: middle;
 }
-
+.submit_button{
+    @extend %buttonStyle;
+}
 section{
     display: flex;
     justify-content: center;

@@ -1,11 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url(reset.css);
-.nav_buttons button {
-  background: #7179e9;
+.nav_buttons button, .submit_button {
+  background: #ced0eb;
   font-size: 1.3rem;
   border-radius: 5px;
   border: none;
   margin: 5px; }
+  .nav_buttons button:hover, .submit_button:hover {
+    cursor: pointer;
+    background: greenyellow; }
 
 body {
   background: #3ab454;
@@ -22,10 +25,6 @@ nav {
   background-color: rgba(83, 83, 83, 0.568); }
   nav ul {
     display: flex; }
-
-.nav_buttons button :hover {
-  cursor: pointer;
-  background: transparent; }
 
 .survey_title {
   display: flex;
